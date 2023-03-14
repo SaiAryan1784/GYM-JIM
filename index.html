@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM-JIM</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body
+    {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: antiquewhite;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym2.jpg');
+        height: fit-content;
+    }
+    .left
+    {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img
+    {
+        width: 78px;
+        filter: invert(100%)
+
+    }
+    .left div
+    {
+        color: rgb(178, 196, 231);
+        text-align: center;
+        line-height: 3px;
+        font-size: 16px;
+    }
+    .right
+    {
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        right: 57px;
+        top: 27px;
+    }
+    .mid
+    {
+        display: block;
+        width: 34%;
+        margin: 12px auto;
+        /* border: 2px solid blue; */
+    }
+    .navbar
+    {
+        display: inline-block;
+    }
+    .navbar li
+    {
+        display: inline-block;
+    }
+    .navbar li a
+    {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 17px;
+        font-size: 20px;
+    }
+    .navbar li a:hover, .navbar li a.active
+    {
+        text-decoration: underline;
+        color: rgb(140, 167, 175);
+    }
+    .btn
+    {
+        margin: 0px 9px;
+        background-color: rgb(7, 7, 7);
+        color: aliceblue;
+        padding: 3px 4px;
+        border-radius: 10px 22px 33px 75px;
+        font-size: 13px;
+        cursor: pointer;
+        height: 31px;
+        border: 1px solid white;
+        font-family: 'Baloo Bhaina 2', cursive;
+        width: 90px;
+    }
+    .right :hover
+    {
+        background-color: rgb(111, 121, 117);
+    }
+    .container
+    {
+        border: 2px solid rgb(74, 77, 77);
+        margin: 106px 80px;
+        padding: 25px;
+        width: 33%;
+        border-radius: 2px;
+        border-radius: 28px;
+    }
+    .container h1
+    {
+        font-size: 29px;
+        font-style: bold;
+    }
+    .form-group input
+    {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 410px;
+        padding: 1px;
+        border: 2px solid black;
+        margin:  3px auto;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: rgb(165, 189, 216);
+
+    }
+    .container button
+    {
+        display: block;
+        margin: auto;
+        background-color: rgb(20, 39, 55);
+        color: rgb(219, 195, 195);
+    }
+    .container button :hover
+    {
+        background-color: rgb(94, 112, 129);
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo1.jpg" alt="">
+            <div>Sai's Fitness</div>
+        </div>
+
+
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="right">
+            <button class="btn">Members</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Best GYM chain is now in your city. . .     JOIN NOW!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="date" name="" placeholder="DOB">
+                <input type="number" name="" placeholder="Contact No.">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
